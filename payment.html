@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="container">
+        <div class="leftdiv"> 
+            <div class="leftinner">
+                
+                <div class="form1">
+                    <form action="">
+                
+
+                <h2>Shipping Address</h2>
+
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                  </select>
+
+                  <div class="inputgroup">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                  </div>
+
+                  <input type="text" placeholder="Address">
+                  <input type="text" placeholder="Apartment,suite,etc, (optional)">
+
+                  <select id="country" name="country">
+                    <option value="india">India</option>
+                  </select>
+
+                  <div class="inputgroup">
+                    <input type="text" placeholder="City">
+                    <select id="state" name="state">
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="Orissa"> Orissa</option>
+                        <option value="Punjab">Punjab</option>
+                      </select>
+                    <input type="text" placeholder="Pincode">
+                  </div>
+                  <p>Phone</p>
+                  <input type="text">
+                  
+            </form>
+            <p> SHIPPING METHOD</p>
+            <hr>
+            <input type="radio" id="" name="" value="HTML">
+             <label for="html">$0.00 USD|6 days|Express</label><br>
+            <p>PAYMENT METHOD</p>
+            <hr>
+            <input type="radio" id="" name="" value="HTML">
+             <label for="html">Pay with credit card or debit card</label>
+             <p>CARD DETAILS</p>
+             <hr>
+             <input type="text" placeholder="Card Number">
+             <input type="text" placeholder="Expiry Date">
+             <input type="text" placeholder="Card Holder Name">
+             <input type="text" placeholder="CVV">
+
+               
+            </div>
+            </div>
+            
+        </div>
+        <div class="rightdiv">
+            <div class="rightinner">
+                <hr>
+                <div class="coupon">
+                    <input type="text,number" id = "inputpromo" placeholder="Gift card or discount Code">
+                    <button onclick="applypromo()" >Apply</button>
+
+                </div>
+                <hr>
+                <div class="subtot">
+                    <p>Subtotal</p>
+                    <p id = "totalprice">$785</p>
+                </div>
+                <div class="subtot">
+                    <p>Shipping</p>
+                    <p>Free</p>
+                </div>
+                <hr>
+                <div class="subtot">
+                    <p>Total</p>
+                    <p id = "totalprice2">$785</p>
+                </div>
+
+                <button class="cashback"  onclick="success()">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="footer1"></div>
+</body>
+</html>
+
+<script type="module">
+    
+    import navbar from './components/navbarlogedin.js'
+    
+
+    let header = document.getElementById("header");
+
+    header.innerHTML= navbar();
+
+    import footer from './components/footer.js'
+    console.log(footer)
+
+    let footer1 = document.getElementById("footer1");
+
+    footer1.innerHTML= footer();
+
+    
+</script>
+
+<script>
+    function success(){
+        alert("Your Order is Placed Successfully");
+        window.location.href="landingpage.html"
+    }
+</script>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="main">
+    <div id="cartitems">
+        <p>SHOPPING BAG</p>
+        <div id="align">
+        <p>ITEM </p>
+          <p>TOTAL</p>
+        </div>
+        <div id="cartline"></div>
+        <div id="addeditem">
+            <div>
+            <img src="https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221445M180044_1/sacai-black-cotton-jacket.jpg" alt="">
+            </div>
+            <div>
+                <p>SACAI</p>
+                <p>Black Cotton Jacket</p>
+                <p>SIZE:1 Only 1 Remaining</p>
+                <a href="">Move to Wishlist</a>
+            </div>
+            <div id="total">
+                <p>$795.00 USD</p><br><br><br><br><br>
+                <a>Remove</a>
+            </div>
+            
+        </div>
+        <div id="cartline"></div>
+        
+        <div id="topay">
+            
+            <div>
+                <p>Total</p>
+                <p>Shipping estimate</p>
+                <b>Order Total</b>
+                
+            </div>
+            <div id="total1">
+                <p>$795.00 USD</p>
+                <p>Calculated at Checkout</p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="proceed">
+        <p>Logged in as</p>
+        <p>john@gmail.com</p>
+        <a href="">Not your Account? Sign in as another user</a><br>
+        <button onclick="payment()">PROCEED TO PAY</button>
+    </div>
+    </div>
+    
+    </div>
+
+
+    <div id="footer1"></div>
+</body>
+</html>
+<script type="module">
+    
+    import navbar from './components/navbarlogedin.js'
+    
+
+    let header = document.getElementById("header");
+
+    header.innerHTML= navbar();
+
+    import footer from './components/footer.js'
+    console.log(footer)
+
+    let footer1 = document.getElementById("footer1");
+
+    footer1.innerHTML= footer();
+
+    
+</script>
+
+<script>
+    function payment(){
+        window.location.href="payment.html"
+    }
+</script>

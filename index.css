@@ -1,0 +1,160 @@
+#navbar{
+    display: flex;
+    font-family: "Favorit SSENSE Inter";
+    font-weight: 500;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    line-height: 15px;
+}
+#header{
+    position: sticky;
+    top: 0px;
+}
+#left{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+#right{
+    display: flex;
+    gap: 20px;
+    margin-left: 300px;
+    margin-top: 20px;
+}   
+#logo{
+    height: 50px;
+    width: 150px;
+    
+    margin-left:  150px; ;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#market{
+    
+    display: flex;
+    height: 600px;
+    gap: 50px;
+    
+}
+#market>div{
+    width: 40%;
+    
+    margin: auto;
+    height: 100%;
+}
+#market>div>img{
+    height: 80%;
+    width: 100%;
+}
+
+#viewstories{
+    display: flex;
+    height: 170px;
+    
+}
+#viewstories>div{
+    
+    width: 19%;
+    display: flex;
+    gap: 10px;
+    padding: 10PX;
+    
+}
+#viewstories>div>div>img{
+    height: 150px;
+}
+#burberry{
+    display: flex;
+    
+    height: 750px;
+}
+#leftdiv{
+    height: 100%;
+    width: 50%;
+    
+
+}
+#leftdiv>div{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+#leftdiv>div>div>img{
+    height: 300px;
+    width: 350px;
+}
+#rightdiv{
+    height: 100%;
+    width: 50%;
+    
+    padding: 10px;
+    display: flex;
+}
+#rightdiv>div>img{
+    height: 300px;
+    width: 300px;
+}
+
+#rofr>div>div>img{
+    height: 150px;
+}
+#rofr>div{
+    display: flex;
+    gap: 10px;
+}
+
+#line{
+    height: 0px;
+    width: 400px;
+    
+}
+#largetext>p:nth-child(1){
+    text-align: center;
+    font-family: "Favorit SSENSE Inter1";
+    font-size: 95px;
+}
+#largetext>p:nth-child(2){
+    text-align: center;
+    font-family: "JHA Times Now";
+    font-size: 95px;
+}
+#largetext>button{
+    margin-left: 650px;
+    background-color: white;
+    
+    font-family: "Favorit SSENSE Inter1";
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 18px;
+}
+#footer{
+    margin-top: 50px;
+    /* position: fixed;
+    left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center; */
+}
+
+#footer>div{
+    display: flex;
+    gap: 10px;
+    font-family: "Favorit SSENSE Inter";
+    margin-left: 100px;
+}
+#footer>div>img{
+    height: 20px;
+    gap: 10px;
+    margin-top: 0px;
+}
+
+#footer>div:nth-child(2){
+    margin-left: 450px;
+}
+
+
+

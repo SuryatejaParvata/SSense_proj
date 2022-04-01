@@ -1,0 +1,20 @@
+#container{
+    height: 4000px;
+    
+    display: flex;
+}
+#designers{
+    
+    width: 20%;
+    text-align:left;
+}
+#items{
+   
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 500px 500px 500px 500px 500px;
+}
+#items>div>a>img{
+    height: 300px;
+}

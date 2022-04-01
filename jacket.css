@@ -1,0 +1,35 @@
+*{
+    font-family: "Favorit SSENSE Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+#mainbox{
+    width: 100%;
+    height: 1500px;
+    
+    display: flex;
+}
+#leftbox{
+    width: 20%;
+    
+}
+#centerbox{
+    width: 60%;
+    
+    display: grid;
+}
+#centerbox>img{
+    height: 500px;
+    margin: auto
+}
+
+#rightbox{
+    
+    width: 20%;
+}
+#rightbox>button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="jacket.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="mainbox">
+        <div id="leftbox">
+            <p>SACAI <br>
+                Black Cotton Jacket</p>
+                <p>Paneled cotton herringbone jacket. Canvas trim throughout.
+                </p>
+                <p>· Spread collar <br>
+                    · Button closure <br>
+                    · Flap pockets <br>
+                    · Concealed bungee-style drawstring at waist<br>
+                    · Press-stud fastening at vented side-seams<br>
+                    · Adjustable press-stud fastening at cuffs<br>
+                    · Unlined</p>
+                    <p>Supplier color: Black</p>
+                    <p>Body: 100% cotton. Trim: 70% cotton, 30% polyamide. <br>
+
+                        Imported.</p>
+                <p>221445M180044</p>
+        </div>
+        <div id="centerbox">
+            <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221445M180044_1/sacai-black-cotton-jacket.jpg" alt="">
+            <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221445M180044_2/sacai-black-cotton-jacket.jpg" alt="">
+            <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221445M180044_4/sacai-black-cotton-jacket.jpg" alt="">
+        </div>
+        <div id="rightbox">
+            <p>$785 USD</p>
+            <select name="cars" id="cars">
+                <option value="">SELECT A SIZE</option>
+                <option value="">1=S-Only 1 Remaining</option>
+                <option value="">2=M-Only 1 Remaining</option>
+                <option value="">3=L-Only 2 Remaining</option>
+                <option value="">4=XL-Only 2 Remaining</option>
+              </select>
+              <button onclick="cart()">Proceed to Buy</button>
+              <p>Item Runs</p> <a href="">True to size</a>
+              <p>Model is 6ft 3" and wears size 3. SIZE GUIDE</p>
+              <p>India : Free shipping on orders over $500 USD.</p>
+        </div>
+    </div>
+
+
+
+    <div id="footer1"></div>
+</body>
+</html>
+
+<script type="module">
+    
+    import navbar from './components/navbarlogedin.js'
+    
+
+    let header = document.getElementById("header");
+
+    header.innerHTML= navbar();
+
+    import footer from './components/footer.js'
+    console.log(footer)
+
+    let footer1 = document.getElementById("footer1");
+
+    footer1.innerHTML= footer();
+
+    
+</script>
+<script>
+    function cart(){
+        window.location.href="cart.html"
+    }
+</script>
